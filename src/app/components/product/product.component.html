@@ -1,10 +1,13 @@
 <ng-container *ngIf="product">
-    <h2>{{product.title}}</h2>
-    <p>Precio: <span> $ {{product.price}}</span></p>
-    <!-- Es una buena práctica para el front end poner el width y height de las imágenes, 
-        para mas información ir a https://www.itdo.com/blog/que-es-el-cumulative-layout-shift-cls/ -->
-    <img [ngSrc]="product.images[0]" [alt]="product.title" width="640" height="480">
+    <app-card 
+        [image]="product.images[0]" 
+        [title]="product.title" 
+        [description]="product.description"
+        [price]="product.price"
+        buttonTitle="Ver mas"
+    >
+    </app-card>
 </ng-container>
 <ng-container *ngIf="!product">
-
+    <h3>No hay productos disponibles</h3>
 </ng-container>

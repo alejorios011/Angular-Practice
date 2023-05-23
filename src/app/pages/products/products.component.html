@@ -3,4 +3,6 @@
     pero cuando se quiere asimilar un atributo, se puede hacer de la siguiente forma, 
     igualmente ambas son valida 
 -->
-<app-product *ngFor="let product of productsList" [product]="product"></app-product>
+<div class="d-flex p-2 flex-wrap justify-content-between gap-3">
+    <app-product *ngFor="let product of productsList" [product]="product"></app-product>
+</div>
