@@ -14,6 +14,8 @@ import { ProductsComponent } from './pages/products/products.component';
  */
 import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { HomeComponent } from './pages/home/home.component';
     ProductComponent,
     // Products Page
     ProductsComponent,
-    HomeComponent
+    HomeComponent,
+    NavbarComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
