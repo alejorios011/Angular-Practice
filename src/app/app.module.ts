@@ -16,6 +16,8 @@ import { NgOptimizedImage } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
+import { RegisterProductComponent } from './components/forms/register-product/register-product.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,13 +28,15 @@ import { CardComponent } from './components/card/card.component';
     ProductsComponent,
     HomeComponent,
     NavbarComponent,
-    CardComponent
+    CardComponent,
+    RegisterProductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgOptimizedImage
+    NgOptimizedImage,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
