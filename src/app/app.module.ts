@@ -18,6 +18,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { RegisterProductComponent } from './components/forms/register-product/register-product.component';
 import { FormsModule } from '@angular/forms';
+import { DetailsComponent } from './components/details/details.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NavbarComponent,
     CardComponent,
-    RegisterProductComponent
+    RegisterProductComponent,
+    DetailsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

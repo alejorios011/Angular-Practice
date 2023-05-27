@@ -12,4 +12,10 @@ export class CardComponent {
   @Input() price!:number;
   // Si no se envia nada al boton, este no se mostrara
   @Input() buttonTitle: string = "";
+  @Input() buttonId!: number;
+  urlQuery: string = "";
+  
+  ngOnInit(): void {
+    this.urlQuery = `/products/details/${this.buttonId}`;
+  }
 }
