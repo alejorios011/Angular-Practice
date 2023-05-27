@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './pages/products/products.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RegisterProductComponent } from './components/forms/register-product/register-product.component';
+import { DetailsComponent } from './components/details/details.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -20,6 +22,13 @@ const routes: Routes = [
     path: 'products/register',
     component: RegisterProductComponent
   },
+  {
+    title: 'Products',
+    path: 'products/details/:id',
+    component: DetailsComponent
+  },
+  { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `home`
+  { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 ];
 
 @NgModule({
