@@ -17,9 +17,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { RegisterProductComponent } from './components/forms/register-product/register-product.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DetailsComponent } from './components/details/details.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -33,14 +34,16 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     CardComponent,
     RegisterProductComponent,
     DetailsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgOptimizedImage,
-    FormsModule
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
