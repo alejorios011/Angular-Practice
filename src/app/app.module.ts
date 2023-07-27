@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './pages/products/products.component';
 
+// Formularios
+import { FormsModule } from '@angular/forms';
+// Agrega ReactiveFormsModule a la lista de imports
+import { ReactiveFormsModule } from '@angular/forms'; 
 /**
  * Normalmente queremos que el usuario visualize las imagenes a medida que va haciendo scroll en la página,
  * no tiene sentido cargar todas las imagenes si no sabemos si el usuario va a visualizarlas todas. 
@@ -17,7 +21,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { RegisterProductComponent } from './components/forms/register-product/register-product.component';
-import { FormsModule } from '@angular/forms';
 import { DetailsComponent } from './components/details/details.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
@@ -40,7 +43,8 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     AppRoutingModule,
     HttpClientModule,
     NgOptimizedImage,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
